@@ -6,16 +6,17 @@
 
 /* 오른쪽 전체 박스 */
 #sec1{
-    width:100%;
-    margin-left:200px;  
+    margin-left:200px; 
+    display: flex;
 }
 
-#sec1>h1 {
+
+#container>h1 {
     font-size:2.5rem;
     padding:20px 0;
 }
 
-#outbox { width:100%; display: flex }
+#outbox { width:100%; display: flex; align-items: center }
 
 #box1 {
     width:calc((100% - 10px) / 2);
@@ -30,8 +31,6 @@
 #box2{
     list-style:none;
     padding:0;
-    margin-top: 40px;
-    
 }
 
 #box2>li { margin:10px }
@@ -67,3 +66,83 @@
         to { background:purple }
     }
     
+
+
+/* 모바일용 메뉴 펼침 버튼 */
+#view {
+    width:40px;
+    line-height: 50px;
+    font-size: 2.5rem;
+    border:none;
+    border-radius: 10px;
+    background:rgba(198,60,63,.9);
+    color:#fff;
+    cursor: pointer;
+    display:none;
+}
+
+#sec1>p { display: none}
+
+#sec1>p>a { text-decoration: none; color:black }
+
+
+
+
+/*---------- 해상도 500px 이하일때 ----------*/
+@media screen and (max-width:500px){
+
+    #sec1 { 
+        width:100%;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left:0px;
+        margin-top: 10px;
+    }
+    
+    #view { 
+        width:10%;
+        line-height: 35px;
+        margin-left: 10px;
+        font-size: 2rem;
+        display: block; 
+    }
+    
+
+    #sec1>p { 
+        margin:0 20px;
+        display: block;
+    }
+    
+    #container { width:90%; margin:0 10px }
+    
+    #container>h1 {
+        font-size:2rem;
+        padding:10px 0;
+    }
+    
+    #outbox { width:100%; flex-wrap: wrap }
+
+    #box1 {
+        width:100%;
+        margin-right:0px;
+    }
+
+    #box1>p {
+        font-size:.9rem;
+    }
+    
+    .text1 { width:100% }
+    
+    
+    #box2 { width:100% }
+    
+    #box2>li>h2 {
+        font-size:1.5rem;
+        padding:5px 0;
+    }
+    
+    
+    
+}  /* @media screen */
+
+

@@ -5,10 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title> Mashup Information </title>
+    
+<!-- jQuery 라이브러리 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>       
 
-<!----- 스타일 파일 ----->    
+<!----- 공통 스타일 파일 ----->    
 <link href="inc/leftBox.css" rel="stylesheet"> <!-- 좌측 고정 박스 -->
+    
+<!----- 스타일 파일 ----->     
 <link href="inc/contact.css" rel="stylesheet"> <!-- 우측 콘텐츠용 -->
+    
+<!--- 공통 스크립트 --->
+<script src="inc/leftBox.js"></script>     
 
 
 </head>
@@ -57,43 +65,48 @@
     
     <section id="sec1"><!-- 오른쪽 박스 -->
         
+        <button id="view">&equiv;</button>
+        <p><a href="index.html">Mashup Template</a></p>
+        
+        <div id="container">
         <h1>Contact</h1>
         <div id="outbox">
-        <div id="box1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div id="box1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-            <form id="Form1">
-                <table width="1000" cellpadding="5">
-                    <tr>
-                        <input type="text" name="Email" class="text1" />
-                    </tr>
-                    <tr>
-                        <input type="text" name="Subject" class="text1" />
-                    </tr>
-                    <tr>
-                        <textarea name="etc" rows="6" cols="30" class="text1"></textarea>
-                    </tr>
+                <form name="Form1">
+                    <table width="1000" cellpadding="5">
+                        <tr>
+                            <input type="text" name="Email" class="text1" />
+                        </tr>
+                        <tr>
+                            <input type="text" name="Subject" class="text1" />
+                        </tr>
+                        <tr>
+                            <textarea name="etc" rows="6" cols="30" class="text1"></textarea>
+                        </tr>
 
-                </table>
-            </form>
-            <button class="button">Send</button>
-        </div>
+                    </table>
+                </form>
+                <button class="button">Send</button>
+            </div>
 
                 
-        <ul id="box2">
-            <li><i class="fas fa-phone-alt"></i>
-                + 33 9 07 45 12 65</li>
-            <li><i class="fas fa-at"></i>
-                e-mail@mail.io</li>
-            <li><i class="fas fa-map-marker-alt"></i>
-                42 rue Moulbert 75016 Paris</li>
-            <li><h2>Follow me on social networks</h2></li>
-            <li><i class="fab fa-instagram snsicon"></i>
-                <i class="fab fa-twitter snsicon"></i>
-                <i class="fas fa-volleyball-ball snsicon"></i></li>
-        </ul>
-        </div>    
+            <ul id="box2">
+                <li><i class="fas fa-phone-alt"></i>
+                    + 33 9 07 45 12 65</li>
+                <li><i class="fas fa-at"></i>
+                    e-mail@mail.io</li>
+                <li><i class="fas fa-map-marker-alt"></i>
+                    42 rue Moulbert 75016 Paris</li>
+                <li><h2>Follow me on social networks</h2></li>
+                <li><i class="fab fa-instagram snsicon"></i>
+                    <i class="fab fa-twitter snsicon"></i>
+                    <i class="fas fa-volleyball-ball snsicon"></i></li>
+            </ul>
+        </div>  
+        </div>        
 
     </section><!-- 오른쪽 박스 #sec1 -->
 

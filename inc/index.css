@@ -68,6 +68,8 @@
 
 #sec1>p { display: none}
 
+#sec1>p>a { text-decoration: none; color:black }
+
 
 /*---------- 해상도 500px 이하일때 ----------*/
 @media screen and (max-width:500px){
@@ -97,8 +99,10 @@
     .outBox { 
         width:100%;
         margin-left:10px;
-        margin-top: 50px;
+        margin-top: 10px;
     }
+    
+    .outBox:last-child { margin-right:10px }
 
     
 }  /* @media screen */

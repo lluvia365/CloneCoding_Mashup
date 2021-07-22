@@ -64,20 +64,6 @@ body{
     }
 
 
-/* 모바일용 메뉴 펼침 버튼 */
-#view {
-    width:40px;
-    line-height: 50px;
-    font-size: 2.5rem;
-    border:none;
-    border-radius: 10px;
-    background:rgba(198,60,63,.9);
-    color:#fff;
-    cursor: pointer;
-    display:none;
-}
-
-
 #foot{
    position:absolute; bottom:10px;
 }
@@ -100,25 +86,27 @@ body{
 @media screen and (max-width:500px){
 
     #leftBox { 
-        width:60%; background:#FFF; 
-        z-index: 99; 
-        left:-100%;
+        position:fixed;
+        top:50px; left:0%;
+        width:60%;
+        height:93%;
+        padding:10px;
+        background:#FFF; 
+        z-index: 9; 
+        display: none;
+    }
+    
+    #foot p {
+        font-size:.5rem
     }
     
     #header { display: none }
 
     
-    #navi { width:65% }
+    #navi { width:90% }
     
-    #view { 
-        line-height: 35px;
-        font-size: 2rem;
-        display: block; 
-    }
  
     #menu>li { width:100%; margin:20px 0 }
-   
-        
     
     
     

@@ -7,14 +7,16 @@
 /* 오른쪽 전체 박스 */
 #sec1{
     margin-left:200px;
+    display: flex;
 }
 
-#sec1>h1 {
+#container>h1 {
     font-size:2.5rem;
     padding:20px 0;
 }
 
-#sec1>p {
+
+#container>p {
     padding:10px 0;
 }
 
@@ -45,8 +47,6 @@
 }
 
 
-
-
 .button{
 
     font-size:1.2rem;
@@ -69,3 +69,95 @@
         to { background:purple }
     }
     
+
+
+/* 모바일용 메뉴 펼침 버튼 */
+#view {
+    width:40px;
+    line-height: 50px;
+    font-size: 2.5rem;
+    border:none;
+    border-radius: 10px;
+    background:rgba(198,60,63,.9);
+    color:#fff;
+    cursor: pointer;
+    display:none;
+}
+
+#sec1>p { display: none}
+
+#sec1>p>a { text-decoration: none; color:black }
+
+
+
+
+/*---------- 해상도 500px 이하일때 ----------*/
+@media screen and (max-width:500px){
+
+    #sec1 { 
+        width:100%;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left:0px;
+        margin-top: 10px;
+    }
+    
+    #view { 
+        width:10%;
+        line-height: 35px;
+        margin-left: 10px;
+        font-size: 2rem;
+        display: block; 
+    }
+    
+
+    #sec1>p { 
+        margin:0 20px;
+        display: block;
+    }
+    
+    #container { width:100%; margin:0 10px }
+    
+    #container>h1 {
+        font-size:2rem;
+        padding:10px 0;
+    }
+    
+    #container>p {
+        padding:10px;
+    }
+
+    
+    .outbox { width:100%; flex-wrap: wrap }
+
+    .inbox {
+        width:100%;
+        margin-right:0px;
+    }
+
+    .inbox>img{
+        width:100%; display:block;
+        margin-top:20px;
+    }
+
+
+    .inbox>h2 {
+        font-size:1.5rem;
+        padding:10px 0;
+    }
+
+    .inbox>p {
+        padding:0;
+    }
+    
+    .button{
+        font-size:.8rem;
+        border:none; border-radius:10px;
+        margin:20px 0;
+        padding:6px;
+    }
+
+    
+}  /* @media screen */
+
+

@@ -15,22 +15,16 @@
 
 #imgbox>img { width:100%; height: 90%; display: block }
 
-.box{
-    width:50%;
-    overflow: :hidden;
-}
+.box{ width:50%; padding-left:20px }
 
-
-.box:last-child{padding-left:20px}
-
-.box:last-child>h1 {font-size:3rem; margin:20px 0}
-.box:last-child>h2 {font-size:1.5rem; margin:20px 0}
-.box:last-child>p {line-height:1.7em; margin-bottom:20px;}
+.box>h1 {font-size:3rem; margin:20px 0}
+.box>h2 {font-size:1.5rem; margin:20px 0}
+.box>p {line-height:1.7em; margin-bottom:20px;}
 
 
 
-#text-button{
-
+#button{
+    
     font-size:1.2rem;
     border:none; border-radius:15px;
     background-color:red; color:white;
@@ -39,8 +33,9 @@
     cursor:pointer;
 }
 
+#button>a { text-decoration: none; color:#FFF }
 
-#text-button:hover{  /* 버튼2에 닿으면 애니메이션 재생 */
+#button:hover{  /* 버튼2에 닿으면 애니메이션 재생 */
         animation: blink 1s infinite linear;
     }
 
@@ -52,4 +47,63 @@
     }
     
 
+/* 모바일용 메뉴 펼침 버튼 */
+#view {
+    width:40px;
+    line-height: 50px;
+    font-size: 2.5rem;
+    border:none;
+    border-radius: 10px;
+    background:rgba(198,60,63,.9);
+    color:#fff;
+    cursor: pointer;
+    display:none;
+}
+
+#sec1>p { display: none}
+
+#sec1>p>a { text-decoration: none; color:black }
+
+
+/*---------- 해상도 500px 이하일때 ----------*/
+@media screen and (max-width:500px){
+
+    #sec1 { 
+        width:100%;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left:0px;
+        margin-top: 10px;
+    }
+    
+    #view { 
+        width:10%;
+        line-height: 35px;
+        margin-left: 10px;
+        font-size: 2rem;
+        display: block; 
+    }
+    
+    #sec1>p { 
+        margin:0 20px;
+        display: block;
+    }
+    
+    #imgbox { width:100%; margin:10px }
+    
+    .box { width:100%; padding: 10px }
+    
+    .box>h1 {font-size:2rem; margin:10px 0}
+    .box>h2 {font-size:1.2rem; margin:10px 0}
+    .box>p {font-size: .9rem; line-height:1.5rem; margin-bottom:10px;}
+
+    
+    #button{
+        font-size:.8rem;
+        border:none; border-radius:10px;
+        margin:0px;
+        padding:6px;
+    }
+
+}  /* @media screen */
 
