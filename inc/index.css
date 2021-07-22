@@ -53,6 +53,57 @@
 
 
 
+/* 모바일용 메뉴 펼침 버튼 */
+#view {
+    width:40px;
+    line-height: 50px;
+    font-size: 2.5rem;
+    border:none;
+    border-radius: 10px;
+    background:rgba(198,60,63,.9);
+    color:#fff;
+    cursor: pointer;
+    display:none;
+}
+
+#sec1>p { display: none}
+
+
+/*---------- 해상도 500px 이하일때 ----------*/
+@media screen and (max-width:500px){
+
+    #sec1 { 
+        width:100%;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left:0px;
+        margin-top: 10px;
+    }
+        
+    #view { 
+        width:10%;
+        line-height: 35px;
+        margin-left: 10px;
+        font-size: 2rem;
+        display: block; 
+    }
+    
+    
+    #sec1>p { 
+        margin:0 20px;
+        display: block;
+    }
+    
+    .outBox { 
+        width:100%;
+        margin-left:10px;
+        margin-top: 50px;
+    }
+
+    
+}  /* @media screen */
+
+
 
 
 
