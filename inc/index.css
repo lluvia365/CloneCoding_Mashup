@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/*메인페이지(index.html)용 스타일 */
+    
+
+/* 오른쪽 전체 박스 */
+#sec1{
+    margin-left:200px;
+    margin-top: 30px;
+    display: flex;
+}
+    
+
+/* 바깥쪽 박스(가로 3등분) */
+.outBox{
+    width:calc((100% - 20px) / 3);
+    margin-right:10px;
+}
+.outBox:last-child { margin-right:0 }
+
+
+.inBox{
+    position:relative;
+    margin-bottom:10px;
+}
+
+.inBox>img{
+    width:100%; display:block;
+}
+
+.caption{
+    position:absolute;
+    top:10px; left:10px;
+    right:10px; bottom:10px;
+    
+    background:rgba(255,255,255,.5);
+    opacity:0; transition:.5s
+}
+
+.inBox:hover .caption {
+    opacity:1; 
+}
+
+.caption>div {
+    position:absolute;
+    top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    width:90%;
+    text-align:center;
+}
+
+.caption a { color:#a00; text-decoration:none}
+
+
+
+
+
+
+
+

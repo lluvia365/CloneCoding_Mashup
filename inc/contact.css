@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/*두번째페이지(About.html)용 스타일 */
+
+
+
+/* 오른쪽 전체 박스 */
+#sec1{
+    width:100%;
+    margin-left:200px;  
+}
+
+#sec1>h1 {
+    font-size:2.5rem;
+    padding:20px 0;
+}
+
+#outbox { width:100%; display: flex }
+
+#box1 {
+    width:calc((100% - 10px) / 2);
+    margin-right:10px;
+}
+
+#box1>p { padding:10px 0 }
+
+.text1 { width:100%; margin:5px auto }
+
+
+#box2{
+    list-style:none;
+    padding:0;
+    margin-top: 40px;
+    
+}
+
+#box2>li { margin:10px }
+
+#box2>li>h2 {
+    font-size:2rem;
+    padding:5px 0;
+}
+
+.snsicon { margin-right:20px}
+
+
+.button{
+
+    font-size:1.2rem;
+    border:none; border-radius:15px;
+    background-color:red; color:white;
+    
+    margin:20px 0px;
+    padding:10px 20px;;
+    cursor:pointer;
+}
+
+
+.button:hover{  /* 버튼2에 닿으면 애니메이션 재생 */
+        animation: blink 1s infinite linear;
+    }
+
+    /* 버튼용 애니메이션 */    
+    @keyframes blink{
+        from { background:purple }
+        50% { background: orange }
+        to { background:purple }
+    }
+    

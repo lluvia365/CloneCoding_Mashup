@@ -1,0 +1,85 @@
+@charset "utf-8"
+/* 왼쪽 고정 박스용 스타일(헤더, 내비게이션, 푸터) */
+    
+/* 구글웹폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans:ital,wght@0,700;1,400&display=swap');
+
+/* FontAwesome */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+
+
+    *{box-sizing:border-box; margin:0; outline:0}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.menu{
+    font-family:'Roboto', sans-serif;
+}
+
+
+/* 왼쪽 전체 박스 */
+#leftBox{ 
+    width:200px;
+    height:100vh;
+    position:fixed; top:0; left:0; /* 상단좌측 고정 */
+    padding:20px;
+    /*border:1px solid black;*/
+}
+
+
+#logo { width:50px }
+
+#header>h3 { font-size:.9rem }
+#header>p { margin:20px 0 }
+
+
+/* Navigation */
+#navi {
+    margin-top:50px;
+}
+
+
+#menu {
+    list-style:none; padding:0;
+}
+
+#menu>li {
+    margin:7px 0;
+}
+
+#menu a {
+    color:#333; text-decoration:none;
+}
+
+
+#menu a:hover{  /* 버튼a에 닿으면 애니메이션 재생 */
+        animation: blink 1s infinite linear;
+    }
+
+ @keyframes blink{
+        from { color:yellow }
+        50% { color: orange }
+        to { color:yellow }
+    }
+
+
+
+#foot{
+   position:absolute; bottom:10px;
+}
+
+#foot .snsicon {
+    margin-right:20px; 
+}
+
+#foot p {
+    font-size:.7rem
+}
+
+#foot a {
+    color:#333; text-decoration:none;
+}
+
+
