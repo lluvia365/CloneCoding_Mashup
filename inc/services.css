@@ -20,7 +20,7 @@
     padding:10px 0;
 }
 
-.outbox { display: flex }
+.outbox { width:100%; display: flex; align-items: center }
 
 .inbox {
     width:calc((100% - 20px) / 3);
@@ -87,6 +87,30 @@
 #sec1>p { display: none}
 
 #sec1>p>a { text-decoration: none; color:black }
+
+
+/*---------- 해상도 800px 이하일때 ----------*/
+@media screen and (max-width:800px){
+    .outbox { flex-wrap: wrap }
+    
+    .inbox {
+        width:50%;
+        margin-right:0px;
+    }
+    
+}  /* @media screen */
+
+
+/*---------- 해상도 700px 이하일때 ----------*/
+@media screen and (max-width:700px){
+    .inbox {
+        width:80%;
+        margin-right:0px;
+    }
+    
+}  /* @media screen */
+
+
 
 
 

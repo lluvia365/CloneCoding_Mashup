@@ -71,6 +71,22 @@
 #sec1>p>a { text-decoration: none; color:black }
 
 
+
+/*---------- 해상도 900px 이하일때 ----------*/
+@media screen and (max-width:900px){
+    #sec1 { flex-wrap: wrap }
+    
+    .outBox { 
+        width:100%; 
+        margin-right:10px;
+        display: flex; flex-wrap: wrap;
+    }
+    
+    .outBox:last-child { margin-right:10px }
+    
+    
+}  /* @media screen */
+
 /*---------- 해상도 500px 이하일때 ----------*/
 @media screen and (max-width:500px){
 
