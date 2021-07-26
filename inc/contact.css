@@ -25,7 +25,9 @@
 
 #box1>p { padding:10px 0 }
 
-.text1 { width:100%; margin:5px auto }
+.form1 { width:100%; height: 40px; margin:5px auto }
+
+.form2 { width:100%; margin:5px auto }
 
 
 #box2{
